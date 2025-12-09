@@ -5,7 +5,7 @@ import QuestList from "./QuestList";
 function App() {
   const [quests, setQuests] = useState([]);
   function saveAddQuest(title) {
-    let auxQuests = quests;
+    let auxQuests = [...quests];
     let id = 0;
     if (auxQuests.length) {
       id = auxQuests[auxQuests.length - 1].id;
