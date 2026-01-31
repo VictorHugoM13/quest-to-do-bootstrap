@@ -52,7 +52,7 @@ export default function QuestItem(props) { // define e exporta o componente func
             {editMode ? "Salvar" : "Editar"} {/* muda o texto do botão conforme o modo */}
           </button>
 
-          <button className="btn btn-danger btn-sm">
+          <button className="btn btn-danger btn-sm" onClick={() => props.saveDeleteQuest(props.quest)}>
             Excluir {/* botão Excluir — atualmente sem onClick, precisa implementar a ação no futuro */}
           </button>
         </div>
